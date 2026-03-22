@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tarefas Diárias</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Tarefas Diárias</h1>
+
+    <div class="input-group">
+      <input type="text" id="inputTarefa" placeholder="Adicionar nova tarefa">
+      <select id="prioridade">
+        <option value="alta">Alta</option>
+        <option value="media">Média</option>
+        <option value="baixa">Baixa</option>
+      </select>
+      <button id="btnAdicionar">Adicionar</button>
+    </div>
+
+    <div class="legenda">
+      <h3>Legenda das Prioridades</h3>
+      <div><span class="prioridade alta">Alta</span></div>
+      <div><span class="prioridade media">Média</span></div>
+      <div><span class="prioridade baixa">Baixa</span></div>
+    </div>
+
+    <h2>Pendentes</h2>
+    <div class="filtro">
+      <label for="filtroPrioridade">Filtrar por prioridade:</label>
+      <select id="filtroPrioridade">
+        <option value="todas">Todas</option>
+        <option value="alta">Alta</option>
+        <option value="media">Média</option>
+        <option value="baixa">Baixa</option>
+      </select>
+    </div>
+    <ul id="listaPendentes"></ul>
+
+    <h2>Concluídas</h2>
+    <ul id="listaConcluidas"></ul>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
